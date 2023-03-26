@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvDolares"
+        android:layout_width="99dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Dólares"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDolar"
+        android:layout_width="208dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:text="0"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDolares" />
+
+    <TextView
+        android:id="@+id/tvEuro"
+        android:layout_width="167dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="36dp"
+        android:text="Euros"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDolar" />
+
+    <EditText
+        android:id="@+id/etEuros"
+        android:layout_width="230dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:text="0"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEuro" />
+
+    <RadioButton
+        android:id="@+id/rbEuro"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:checked="false"
+        android:text="Euros a Dolares"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEuros" />
+
+    <RadioButton
+        android:id="@+id/rbDolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Dolares a Euros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbEuro" />
+
+    />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:text="Cambio a.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbDolares" />
+
+    <EditText
+        android:id="@+id/etResultado"
+        android:layout_width="245dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btCombertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Convertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etResultado" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
