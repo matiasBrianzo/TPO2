@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 binding.etResultado.setText(0 + "");
             }
         });
-        //Coloco el observer al mutable del ViewModel
 
         mv.getConversion().observe(this, new Observer<Double>() {
             @Override
